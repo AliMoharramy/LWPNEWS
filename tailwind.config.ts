@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        "3xl": "box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.07);",
-      },
       blur: {
         xs: "1.5px",
       },
@@ -25,7 +22,8 @@ const config: Config = {
     },
     colors: {
       secondary: "#FC4308",
-      Black75: "#3E3232",
+      Black75: "rgba(62, 50, 50, 0.75)",
+      Black50: "rgba(62, 50, 50, 0.5)",
       Gray: "#F5F5F5",
       Black: "#3E3232",
       White: "#FFFFFF",
@@ -34,6 +32,8 @@ const config: Config = {
       Dark50: "rgba(0,0,0,0.5)",
       BoxShodow: "rgba(0,0,0,0.07)",
       Primary: "#F81539",
+      Blue: "#2F5C9F",
+      Red: "#AA3034",
     },
   },
   plugins: [],

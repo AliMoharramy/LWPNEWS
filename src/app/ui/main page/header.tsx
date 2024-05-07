@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-between my-6">
+    <div className="flex flex-row justify-between my-6  w-10/12 mx-auto">
       <nav className="flex flex-row items-center">
         <h3 className="text-secondary font-bold text-lg">LWP.news</h3>
         <ul className="flex flex-row items-center gap-5 ml-16 text-sm text-Black">

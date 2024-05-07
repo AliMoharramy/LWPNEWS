@@ -15,3 +15,43 @@
   top: 0.4rem;
   left: -0.5rem;
 }
+.shadowbox {
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.07);
+}
+.tagshadow {
+  box-shadow: 0px 0px 38px 55px rgba(245, 245, 245, 1);
+}
+.striped tr:nth-child(even) td:first-child {
+  background-color: #f5f5f5;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.striped tr:nth-child(even) td:last-child {
+  background-color: #f5f5f5;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.striped tr:nth-child(even) td:not(:last-child:first-child) {
+  background-color: #f5f5f5;
+}
+.club_table tr th:not(:last-child) {
+  padding-right: 2rem;
+}
+.ptsrow {
+  padding-right: 0.2rem;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.gradivs {
+  background: -webkit-linear-gradient(#f81539, #fc4308);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.calender td {
+  padding: 0.5rem;
+}
+.calender th {
+  padding: 0.5rem;
+}
