@@ -19,14 +19,10 @@ export default function Competition() {
         </div>
       </div>
       <div className="flex flex-row gap-1 mt-8">
-        <p className="bg-Blue text-White py-2 px-6 rounded-l-xl">
-          Manchester City
-        </p>
+        <p className="bg-Blue text-White py-2 px-6 rounded-l-xl">ManCity</p>
         <p className="bg-Black text-White py-2 px-3 rounded-l-xl">00</p>
         <p className="bg-Black text-White py-2 px-3 rounded-r-xl">00</p>
-        <p className="bg-Red text-White py-2 px-6 rounded-r-xl">
-          Tottenham Hotspur
-        </p>
+        <p className="bg-Red text-White py-2 px-6 rounded-r-xl">Tottenham</p>
       </div>
     </div>
   );
