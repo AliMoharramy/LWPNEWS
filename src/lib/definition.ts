@@ -3,9 +3,9 @@ export interface post {
   src: string;
   title: string;
   text: string;
-  userimage: string;
-  username: string;
-  date: string;
+  userimage?: string;
+  username?: string;
+  date?: string;
 }
 export type clubtable = {
   club: string;

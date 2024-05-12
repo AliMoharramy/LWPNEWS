@@ -14,6 +14,10 @@ const config: Config = {
       height: {
         "128": "25rem",
       },
+      width: {
+        "128": "40rem",
+        video: "80rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -24,6 +28,7 @@ const config: Config = {
       secondary: "#FC4308",
       Black75: "rgba(62, 50, 50, 0.75)",
       Black50: "rgba(62, 50, 50, 0.5)",
+      Black5: "rgba(62, 50, 50, 0.05)",
       Gray: "#F5F5F5",
       Black: "#3E3232",
       White: "#FFFFFF",
