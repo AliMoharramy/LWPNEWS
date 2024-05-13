@@ -12,11 +12,11 @@ export default function VideoCart({ data }: { data: post }) {
           className="rounded-xl object-cover"
         />
       </div>
-      <div className="ml-3">
-        <h4 className="text-sm text-Black font-bold my-4 overflow-hidden text-ellipsis line-clamp-1 block">
+      <div className="ml-3 whitespace-pre-wrap inline text-wrap">
+        {/* <h4 className="text-sm text-Black font-bold my-4 overflow-hidden text-ellipsis line-clamp-1 block">
           {data.title}
         </h4>
-        <p className=" text-sm text-Black75 block w-full">{data.text}</p>
+        <p className=" text-sm text-Black75 block w-full">{data.text}</p> */}
       </div>
     </div>
   );

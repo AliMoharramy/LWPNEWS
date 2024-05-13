@@ -9,7 +9,7 @@ export default function PostCart({ data }: { data: post }) {
           src={`/${data.name}/${data.src}`}
           alt={data.name}
           fill
-          className="rounded-xl"
+          className="rounded-xl object-cover"
         />
       </div>
       <div className="rounded-xl">
