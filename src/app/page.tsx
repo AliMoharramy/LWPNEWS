@@ -7,6 +7,7 @@ import SportWidget from "./ui/main page/sportwidget";
 import NewPosts from "./ui/main page/newposts";
 import LatestVideo from "./ui/main page/latestvideos";
 import TrendyPosts from "./ui/main page/trendyposts";
+import Weather from "./ui/main page/weather";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <NewPosts />
       <LatestVideo />
       <TrendyPosts />
+      <Weather />
     </div>
   );
 }

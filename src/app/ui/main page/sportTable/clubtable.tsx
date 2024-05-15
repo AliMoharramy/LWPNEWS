@@ -5,7 +5,7 @@ import Image from "next/image";
 export default async function ClubTable() {
   const allClubs = await fetchClubTable();
   const sortedClubes = allClubs.sort((item) => item.pts);
-  console.log(allClubs.find((item) => item.pts === 83)?.club);
+  allClubs.find((item) => item.pts === 83)?.club;
   return (
     <div className="z-50 bg-White p-4 rounded-xl">
       <table className="club_table table-auto">
