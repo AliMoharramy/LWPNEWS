@@ -16,3 +16,13 @@ export default async function weatherdata(city: string) {
   const data = await getWeatherdata();
   return data;
 }
+export async function timezone(city: string, continent: string) {
+  const getTimezone = async () => {
+    const res = await fetch(
+      `https://timeapi.io/api/Time/current/zone?timeZone=${continent}/${city}`
+    );
+    return res.json();
+  };
+  const data = await getTimezone();
+  return data;
+}

@@ -69,15 +69,8 @@ export default function LineChart() {
     },
   };
   return (
-    <div>
-      <div
-        style={{
-          width: "900px",
-          height: "400px",
-          padding: "20px",
-          cursor: "pointer",
-        }}
-      >
+    <div className="py-4">
+      <div className="h-full w-full">
         <Line data={data} options={options} />
       </div>
     </div>

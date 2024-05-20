@@ -8,6 +8,8 @@ import NewPosts from "./ui/main page/newposts";
 import LatestVideo from "./ui/main page/latestvideos";
 import TrendyPosts from "./ui/main page/trendyposts";
 import Weather from "./ui/main page/weather";
+import PostBar from "./ui/main page/postbar";
+import { posts } from "./../lib/posts.json";
 
 export default function Home() {
   return (
@@ -21,6 +23,10 @@ export default function Home() {
       <LatestVideo />
       <TrendyPosts />
       <Weather />
+      <PostBar
+        title={"Top Posts"}
+        posts={posts.filter((item, index) => index >= 8 && index <= 11)}
+      />
     </div>
   );
 }

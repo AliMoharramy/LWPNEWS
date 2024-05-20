@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "name": "sport",
+      "src": "05.jpg",
+      "title": "Opening Day of Boating Season, Seattle WA",
+      "text": "Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge",
+      "userimage": "12.jpg",
+      "username": "James",
+      "date": "August 18 ,2022"
+    },
+    {
+      "name": "technology",
+      "src": "01.jpg",
+      "title": "How to choose the right laptop for programming",
+      "text": "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
+      "userimage": "02.jpg",
+      "username": "Louis Hobregts",
+      "date": "July 25 ,2022"
+    },
+    {
+      "name": "car",
+      "src": "02.jpg",
+      "title": "How we built the first real self-driving car",
+      "text": "Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when",
+      "userimage": "03.jpg",
+      "username": "Mary",
+      "date": "August 14 ,2022"
+    },
+    {
+      "name": "food",
+      "src": "07.jpg",
+      "title": "How to Persuade Your Parents to Buy Fast Food",
+      "text": "Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.",
+      "userimage": "10.jpg",
+      "username": "Jon Kantner",
+      "date": "May 10 ,2022"
+    },
+    {
+      "name": "car",
+      "src": "08.jpg",
+      "title": "How to build a self-driving car in one month",
+      "text": "Can I learn the necessary computer science to build the software part of a self-driving car in one month?",
+      "userimage": "02.jpg",
+      "username": "Mary",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "sport",
+      "src": "10.jpg",
+      "title": "Self-Improvement Has Become An Extreme Sport",
+      "text": "What we’re told we must do each day to develop and be successful has gone out of control. We have endless lists of habits that we’re supposed to do",
+      "userimage": "12.jpg",
+      "username": "James",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "food",
+      "src": "06.jpg",
+      "title": "10 Cooking Lessons to Use in Everyday Life",
+      "text": "I recently stumbled upon this quote by Paul Theroux: “Cooking requires confident guesswork and improvisation ",
+      "userimage": "10.jpg",
+      "username": "Jon Kantner",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "technology",
+      "src": "06.jpg",
+      "title": "Typography can make or break your design: a process for choosing type",
+      "text": "One of the most important skills you can learn as a designer is how to choose type. This is because text is one of the primary ways designers can communicate with users. Typography can make or break a design. There’s a beauty and complexity to typography. Some people devote their…",
+      "userimage": "01.jpg",
+      "username": "Robert",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "sport",
+      "src": "01.jpg",
+      "title": "House boating on Lake Shasta",
+      "text": "The best way to spend a long 4th of July weekend. Wake boarding, swimming, barbecues, and bonfires.",
+      "userimage": "12.jpg",
+      "username": "James",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "technology",
+      "src": "03.jpg",
+      "title": "How to choose the right laptop for programming",
+      "text": "Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs",
+      "userimage": "01.jpg",
+      "username": "Robert",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "car",
+      "src": "07.jpg",
+      "title": "Why Buying a New Car Makes More Sense than Buying Used",
+      "text": "Many experts will tell you buying cars used is best for your long-term financial health. Here’s why they’re (mostly) wrong",
+      "userimage": "02.jpg",
+      "username": "Mary",
+      "date": "July 14 , 2022"
+    },
+    {
+      "name": "food",
+      "src": "01.jpg",
+      "title": "Lasagna is but a Pasta Cake",
+      "text": "Re-envision the description of a common food from a different perspective — it is … pasta cake layered with cheese, meat, pasta repeated, bake and serve. ",
+      "userimage": "10.jpg",
+      "username": "Jon Kantner",
+      "date": "July 14 , 2022"
+    }
+  ]
+}
