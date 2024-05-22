@@ -10,7 +10,7 @@ export default async function Weather() {
 
   return (
     <div className="bg-Gray">
-      <div className="w-10/12 mx-auto my-16 grid grid-cols-2 py-12 gap-5">
+      <div className="w-10/12 mx-auto my-16 grid grid-cols-2 py-16 gap-5">
         <div className="bg-White rounded-xl p-4">
           <div className="flex flex-row items-center justify-between">
             <div className="relative z-40 col-span-2 flex justify-center items-center">

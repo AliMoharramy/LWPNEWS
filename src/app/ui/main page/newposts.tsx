@@ -59,7 +59,7 @@ export default function NewPosts() {
     },
   ];
   return (
-    <div className="my-16  w-10/12 mx-auto">
+    <div className="my-16 w-10/12 mx-auto">
       <div className="flex flex-row justify-between my-6 items-center">
         <h4 className="popualrtitle relative before:bg-Primary">New Posts</h4>
 
