@@ -13,7 +13,9 @@ export default async function CityWidget({
   const data = await weatherdata(cityName);
   const time = await timezone(cityName, continent);
   return (
-    <div className={`relative myimage ${cityName} rounded-xl overflow-hidden`}>
+    <div
+      className={`relative myimage ${cityName} rounded-xl overflow-hidden h-60`}
+    >
       <Image
         src={src}
         alt="city"

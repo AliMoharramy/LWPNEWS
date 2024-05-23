@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        "100": "100",
+      },
       blur: {
         xs: "1.5px",
       },

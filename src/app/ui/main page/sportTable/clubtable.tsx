@@ -7,7 +7,7 @@ export default async function ClubTable() {
   const sortedClubes = allClubs.sort((item) => item.pts);
   allClubs.find((item) => item.pts === 83)?.club;
   return (
-    <div className="z-50 bg-White p-4 rounded-xl">
+    <div className="z-50 bg-White p-4 rounded-xl hidden lg:grid">
       <table className="club_table table-auto">
         <thead>
           <tr className="text-left">

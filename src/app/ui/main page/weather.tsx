@@ -10,8 +10,8 @@ export default async function Weather() {
 
   return (
     <div className="bg-Gray">
-      <div className="w-10/12 mx-auto my-16 grid grid-cols-2 py-16 gap-5">
-        <div className="bg-White rounded-xl p-4">
+      <div className="w-10/12 mx-auto my-16 lg:grid grid-cols-2 py-16 gap-5">
+        <div className="bg-White rounded-xl p-4 lg:grid hidden">
           <div className="flex flex-row items-center justify-between">
             <div className="relative z-40 col-span-2 flex justify-center items-center">
               <Image
@@ -48,7 +48,7 @@ export default async function Weather() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-5 text-White">
+        <div className="lg:grid grid-cols-2 gap-5 text-White hidden">
           <CityWidget
             cityName="Ankara"
             continent="Asia"
@@ -66,6 +66,7 @@ export default async function Weather() {
           />
           <CityWidget cityName="Paris" continent="Europe" src="/city/01.jpg" />
         </div>
+        <CityWidget cityName="Paris" continent="Europe" src="/city/01.jpg" />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Competition() {
   return (
-    <div className="z-50 bg-White p-4 rounded-xl flex flex-col items-center justify-between">
+    <div className="z-50 bg-White p-4 rounded-xl lg:flex flex-col items-center justify-between hidden">
       <div className="text-center">
         <p>The Final Round</p>
       </div>

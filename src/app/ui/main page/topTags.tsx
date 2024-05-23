@@ -13,7 +13,7 @@ const toptags = [
 
 export default function TopTags() {
   return (
-    <div className="flex flex-row justify-end my-12 relative bg-Gray p-2 rounded-xl overflow-hidden  w-10/12 mx-auto">
+    <div className="lg:flex flex-row justify-end my-12 relative bg-Gray p-2 rounded-xl overflow-hidden w-10/12 mx-auto hidden">
       <div
         id="tagtop"
         className="absolute left-2 z-0 h-full top-0 py-2 flex flex-row gap-5 w-full"

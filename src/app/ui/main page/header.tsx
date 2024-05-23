@@ -1,11 +1,30 @@
+"use client";
 import Image from "next/image";
+import Menubar from "./menubar";
+
+function menuOpen() {
+  alert("Checking 😊");
+}
+function menuClose() {}
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-between my-6  w-10/12 mx-auto">
+    <div className="flex flex-row lg:justify-between my-6 gap-3 lg:gap-0 w-10/12 mx-auto">
       <nav className="flex flex-row items-center">
-        <h3 className="text-secondary font-bold text-lg">LWP.news</h3>
-        <ul className="flex flex-row items-center gap-5 ml-16 text-sm text-Black">
+        <div className="lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            className="bg-Gray p-4 rounded-xl w-12 cursor-pointer"
+            onClick={(e) => menuOpen()}
+          >
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </div>
+        <h3 className="text-secondary font-bold text-lg hidden lg:flex">
+          LWP.news
+        </h3>
+        <ul className="lg:flex flex-row items-center gap-5 ml-16 text-sm text-Black hidden">
           <li>
             <button
               id="dropdownNavbarLink"
@@ -104,8 +123,11 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div className="flex flex-row items-center text-Black">
-        <div id="search" className="flex flex-row bg-Gray p-2 px-4 rounded-xl">
+      <div className="flex flex-row items-center text-Black w-full lg:w-auto">
+        <div
+          id="search"
+          className="flex flex-row bg-Gray px-4 rounded-xl justify-between w-full h-full lg:p-2 lg:w-auto"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 128 512"
@@ -126,7 +148,7 @@ export default function Header() {
             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
           </svg>
         </div>
-        <div id="user" className="flex flex-row mx-4">
+        <div id="user" className="lg:flex flex-row mx-4 hidden">
           <Image
             src="/avatar/06.jpg"
             alt=""
@@ -157,7 +179,10 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        <div id="savebtn" className="bg-Gray p-3 rounded-xl ml-4">
+        <div
+          id="savebtn"
+          className="bg-Gray p-3 rounded-xl ml-4 hidden lg:flex"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 384 512"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SingleContent() {
   return (
-    <div className="grid grid-col-4 gap-4 overflow-hidden h-128  w-10/12 mx-auto">
+    <div className="hidden lg:grid grid-col-4 gap-4 overflow-hidden h-128 w-10/12 mx-auto">
       <div className="relative">
         <Image
           src="/car/05.jpg"

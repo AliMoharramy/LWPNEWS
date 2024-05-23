@@ -8,6 +8,7 @@ import LatestVideo from "./ui/main page/latestvideos";
 import Weather from "./ui/main page/weather";
 import PostBar from "./ui/main page/postbar";
 import { posts } from "./../lib/posts.json";
+import Menubar from "./ui/main page/menubar";
 
 export default function Home() {
   return (

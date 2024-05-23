@@ -1,3 +1,4 @@
+import PostCart from "./postcart";
 import RpostCart from "./rowpostcart";
 
 export default function NewPosts() {
@@ -74,10 +75,13 @@ export default function NewPosts() {
           </svg>
         </button>
       </div>
-      <div className="grid grid-cols-2 grid-rows-3 gap-4">
+      <div className="lg:grid grid-cols-2 grid-rows-3 gap-4 hidden">
         {posts.map((post, index) => (
           <RpostCart data={post} key={index} />
         ))}
+      </div>
+      <div className="grid grid-cols-1 grid-rows-1 gap-4 lg:hidden">
+        <PostCart data={posts[0]} />
       </div>
     </div>
   );
