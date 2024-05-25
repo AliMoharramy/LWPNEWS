@@ -31,7 +31,7 @@ export default function Header() {
               data-dropdown-toggle="dropdownNavbar"
               className="flex items-center justify-between w-full p-0 text-gray-900 rounded  md:dark:hover:bg-transparent"
             >
-              Dropdown
+              Categories
               <svg
                 className="w-2.5 h-2.5 ms-1.5"
                 aria-hidden="true"

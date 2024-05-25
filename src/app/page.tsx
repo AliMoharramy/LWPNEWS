@@ -17,18 +17,21 @@ export default function Home() {
       <TopTags />
       <SingleContent />
       <PostBar
+        useclass={"popularPosts"}
         title={"Popular Posts"}
-        posts={posts.filter((item, index) => index >= 0 && index < 4)}
+        posts={posts.filter((item, index) => index >= 0 && index < 5)}
       />
       <SportWidget />
       <NewPosts />
       <LatestVideo />
       <PostBar
+        useclass={"trendyPosts"}
         title={"Trendy Posts"}
         posts={posts.filter((item, index) => index >= 4 && index < 8)}
       />
       <Weather />
       <PostBar
+        useclass={"topPosts"}
         title={"Top Posts"}
         posts={posts.filter((item, index) => index >= 8 && index < 12)}
       />

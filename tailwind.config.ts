@@ -40,6 +40,7 @@ const config: Config = {
       Dark50: "rgba(0,0,0,0.5)",
       BoxShodow: "rgba(0,0,0,0.07)",
       Primary: "#F81539",
+      Primary75: "rgba(248, 21, 57, 0.75)",
       Blue: "#2F5C9F",
       Red: "#AA3034",
     },

@@ -127,3 +127,8 @@ table {
     rgba(44, 165, 224, 1) 100%
   );
 }
+@media only screen and (max-width: 640px) {
+  .topPosts {
+    margin-bottom: 7rem;
+  }
+}

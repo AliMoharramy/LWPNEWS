@@ -1,9 +1,17 @@
-export default function SectionHead({ title }: { title: string }) {
+export default function SectionHead({
+  title,
+  gonext,
+  goback,
+}: {
+  title: string;
+  gonext: Function;
+  goback: Function;
+}) {
   return (
     <div className="flex flex-row justify-between my-6 items-center">
       <h4 className="popualrtitle relative before:bg-Primary">{title}</h4>
       <div className="flex flex-row">
-        <button>
+        <button onClick={(e) => goback()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"
@@ -12,7 +20,7 @@ export default function SectionHead({ title }: { title: string }) {
             <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
           </svg>
         </button>
-        <button>
+        <button onClick={(e) => gonext()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 320 512"

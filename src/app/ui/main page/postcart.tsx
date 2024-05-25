@@ -3,7 +3,7 @@ import { post } from "@/lib/definition";
 
 export default function PostCart({ data }: { data: post }) {
   return (
-    <div className="p-2 rounded-xl shadowbox">
+    <div className="p-2 rounded-xl shadowbox cursor-pointer">
       <div className="relative h-40">
         <Image
           src={`/${data.name}/${data.src}`}

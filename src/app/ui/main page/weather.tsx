@@ -66,7 +66,9 @@ export default async function Weather() {
           />
           <CityWidget cityName="Paris" continent="Europe" src="/city/01.jpg" />
         </div>
-        <CityWidget cityName="Paris" continent="Europe" src="/city/01.jpg" />
+        <div className="lg:hidden">
+          <CityWidget cityName="Paris" continent="Europe" src="/city/01.jpg" />
+        </div>
       </div>
     </div>
   );
