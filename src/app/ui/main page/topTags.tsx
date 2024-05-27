@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 const toptags = [
   { name: "food", tag: "Food", src: "01.jpg" },
@@ -8,31 +10,41 @@ const toptags = [
   { name: "music", tag: "Music", src: "06.png" },
   { name: "technology", tag: "Technology", src: "01.jpg" },
   { name: "abstract", tag: "Abstract", src: "07.jpg" },
-  { name: "food", tag: "Food", src: "06.jpg" },
+  { name: "food", tag: "Food", src: "01.jpg" },
+  { name: "animal", tag: "Animal", src: "10.jpg" },
+  { name: "car", tag: "Car", src: "04.jpg" },
 ];
 
 export default function TopTags() {
+  const [next, setNext] = useState(0);
   return (
     <div className="lg:flex flex-row justify-end my-12 relative bg-Gray p-2 rounded-xl overflow-hidden w-10/12 mx-auto hidden">
       <div
         id="tagtop"
         className="absolute left-2 z-0 h-full top-0 py-2 flex flex-row gap-5 w-full"
       >
-        {toptags.map((tag, index) => (
-          <button className="relative flex items-center w-full" key={index}>
-            <Image
-              src={`/${tag.name}/${tag.src}`}
-              alt="tagimg"
-              fill
-              className="rounded-xl blur-xs object-cover h-5/6 absolute"
-            />
-            <p className="absolute text-White text-sm top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              {`#${tag.tag}`}
-            </p>
-          </button>
-        ))}
+        {toptags.map(
+          (tag, index) =>
+            index < next + 8 &&
+            index >= next && (
+              <button className="relative flex items-center w-full" key={index}>
+                <Image
+                  src={`/${tag.name}/${tag.src}`}
+                  alt="tagimg"
+                  fill
+                  className="rounded-xl blur-xs object-cover h-5/6 absolute"
+                />
+                <p className="absolute text-White text-sm top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  {`#${tag.tag}`}
+                </p>
+              </button>
+            )
+        )}
       </div>
-      <button className="z-50 items-start bg-Gray tagshadow">
+      <button
+        className="z-50 items-start bg-Gray tagshadow"
+        onClick={(e) => setNext(next <= toptags.length - 9 ? next + 1 : next)}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512"

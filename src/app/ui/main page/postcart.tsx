@@ -1,9 +1,21 @@
+"use client";
 import Image from "next/image";
 import { post } from "@/lib/definition";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React from "react";
 
 export default function PostCart({ data }: { data: post }) {
+  const router = useRouter();
+  function postLink(e: React.MouseEvent) {
+    e.preventDefault();
+    router.push(`/posts/${data.title.split(" ").join("-")}`);
+  }
   return (
-    <div className="p-2 rounded-xl shadowbox cursor-pointer">
+    <div
+      className="p-2 rounded-xl shadowbox cursor-pointer"
+      onClick={(e) => postLink(e)}
+    >
       <div className="relative h-40">
         <Image
           src={`/${data.name}/${data.src}`}
