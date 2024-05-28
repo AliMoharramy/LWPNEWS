@@ -9,7 +9,7 @@ export default function PostCart({ data }: { data: post }) {
   const router = useRouter();
   function postLink(e: React.MouseEvent) {
     e.preventDefault();
-    router.push(`/posts/${data.title.split(" ").join("-")}`);
+    router.push(`/posts/${data.id}`);
   }
   return (
     <div

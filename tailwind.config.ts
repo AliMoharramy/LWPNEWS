@@ -15,11 +15,14 @@ const config: Config = {
         xs: "1.5px",
       },
       height: {
+        "138": "28rem",
         "128": "25rem",
+        "88": "22rem",
       },
       width: {
         "128": "40rem",
         video: "80rem",
+        "19/20": "95%",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

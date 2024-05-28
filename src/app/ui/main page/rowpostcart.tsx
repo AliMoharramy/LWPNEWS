@@ -1,9 +1,19 @@
+"use client";
 import Image from "next/image";
 import { post } from "@/lib/definition";
+import { useRouter } from "next/navigation";
 
 export default function RpostCart({ data }: { data: post }) {
+  const router = useRouter();
+  function postLink(e: React.MouseEvent) {
+    e.preventDefault();
+    router.push(`/posts/${data.id}`);
+  }
   return (
-    <div className="p-2 rounded-xl shadowbox grid grid-cols-2">
+    <div
+      className="p-2 rounded-xl shadowbox grid grid-cols-2 cursor-pointer"
+      onClick={(e) => postLink(e)}
+    >
       <div className="relative w-full">
         <Image
           src={`/${data.name}/${data.src}`}

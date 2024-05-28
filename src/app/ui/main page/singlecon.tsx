@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SingleContent() {
   return (
     <div className="hidden lg:grid grid-col-4 gap-4 overflow-hidden h-128 w-10/12 mx-auto">
-      <div className="relative">
+      <div className="relative cursor-pointer">
         <Image
           src="/car/05.jpg"
           alt="car"
@@ -21,7 +21,7 @@ export default function SingleContent() {
           </p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative cursor-pointer">
         <Image
           src="/music/08.jpg"
           alt="music"
@@ -39,7 +39,7 @@ export default function SingleContent() {
           </p>
         </div>
       </div>
-      <div className="col-span-2 col-start-3 relative">
+      <div className="col-span-2 col-start-3 relative cursor-pointer">
         <Image
           src="/technology/01.jpg"
           alt="technology"

@@ -1,4 +1,5 @@
 export interface post {
+  id?: string;
   name: string;
   src: string;
   title: string;
@@ -17,4 +18,7 @@ export type clubtable = {
   a: number;
   gd: number;
   pts: number;
+};
+export type params = {
+  posttitle: string;
 };

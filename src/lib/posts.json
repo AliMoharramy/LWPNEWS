@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "Opening-Day-of-Boating-Season,-Seattle-WA",
       "name": "sport",
       "src": "05.jpg",
       "title": "Opening Day of Boating Season, Seattle WA",
@@ -11,7 +11,7 @@
       "date": "August 18 ,2022"
     },
     {
-      "id": 2,
+      "id": "How-to-choose-the-right-laptop-for-programming",
       "name": "technology",
       "src": "01.jpg",
       "title": "How to choose the right laptop for programming",
@@ -21,7 +21,7 @@
       "date": "July 25 ,2022"
     },
     {
-      "id": 3,
+      "id": "How-we-built-the-first-real-self-driving-car",
       "name": "car",
       "src": "02.jpg",
       "title": "How we built the first real self-driving car",
@@ -31,7 +31,7 @@
       "date": "August 14 ,2022"
     },
     {
-      "id": 4,
+      "id": "How-to-Persuade-Your-Parents-to-Buy-Fast-Food",
       "name": "food",
       "src": "07.jpg",
       "title": "How to Persuade Your Parents to Buy Fast Food",
@@ -41,7 +41,7 @@
       "date": "May 10 ,2022"
     },
     {
-      "id": 5,
+      "id": "How-to-build-a-self-driving-car-in-one-month",
       "name": "car",
       "src": "08.jpg",
       "title": "How to build a self-driving car in one month",
@@ -51,7 +51,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 6,
+      "id": "Self-Improvement-Has-Become-An-Extreme-Sport",
       "name": "sport",
       "src": "10.jpg",
       "title": "Self-Improvement Has Become An Extreme Sport",
@@ -61,7 +61,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 7,
+      "id": "10-Cooking-Lessons-to-Use-in-Everyday-Life",
       "name": "food",
       "src": "06.jpg",
       "title": "10 Cooking Lessons to Use in Everyday Life",
@@ -71,7 +71,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 8,
+      "id": "Typography-can-make-or-break-your-design:-a-process-for-choosing-type",
       "name": "technology",
       "src": "06.jpg",
       "title": "Typography can make or break your design: a process for choosing type",
@@ -81,7 +81,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 9,
+      "id": "House-boating-on-Lake-Shasta",
       "name": "sport",
       "src": "01.jpg",
       "title": "House boating on Lake Shasta",
@@ -91,7 +91,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 10,
+      "id": "How-to-choose-the-right-laptop-for-programming",
       "name": "technology",
       "src": "03.jpg",
       "title": "How to choose the right laptop for programming",
@@ -101,7 +101,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 11,
+      "id": "Why-Buying-a-New-Car-Makes-More-Sense-than-Buying-Used",
       "name": "car",
       "src": "07.jpg",
       "title": "Why Buying a New Car Makes More Sense than Buying Used",
@@ -111,7 +111,7 @@
       "date": "July 14 , 2022"
     },
     {
-      "id": 12,
+      "id": "Lasagna-is-but-a-Pasta-Cake",
       "name": "food",
       "src": "01.jpg",
       "title": "Lasagna is but a Pasta Cake",
@@ -119,6 +119,66 @@
       "userimage": "10.jpg",
       "username": "Jon Kantner",
       "date": "July 14 , 2022"
+    },
+    {
+      "id": "12-Mobile-UX-Design-Trends-For-2018",
+      "name": "technology",
+      "src": "04.jpg",
+      "title": "12 Mobile UX Design Trends For 2018",
+      "text": "Things move quickly in the mobile app universe. To succeed in the field of mobile UX design, designers must have the foresight and prepare for new challenges around the corner",
+      "userimage": "10.jpg",
+      "username": "Jon Kantner",
+      "date": "July 14 ,2022"
+    },
+    {
+      "id": "No-boat-bottomfish:-Jetty-fishing-on-the-Washington-Coast",
+      "name": "sport",
+      "src": "01.jpg",
+      "title": "No boat bottomfish: Jetty fishing on the Washington Coast",
+      "text": "Cast from the rocks to bring home fresh fish tacos in this iconic spring and summer fishery. — Are you looking to go fishing and bring home deliciou",
+      "userimage": "01.jpg",
+      "username": "Louis Hobregts",
+      "date": "July 13 ,2022"
+    },
+    {
+      "id": "What-a-Disabled-Squirrel-Taught-Me-About-Life,-Work,-and-Love",
+      "name": "animal",
+      "src": "03.jpg",
+      "title": "What a Disabled Squirrel Taught Me About Life, Work, and Love",
+      "text": "Why it helps to know what it’s like, and the exquisite beauty of empathy These days, the wood patio area just outside my kitchen door is a riot ",
+      "userimage": "12.jpg",
+      "username": "James",
+      "date": "May 2 ,2022"
+    },
+    {
+      "id": "Becoming-a-Self-Driving-Car-&-Machine-Learning-Engineer",
+      "name": "car",
+      "src": "01.jpg",
+      "title": "Becoming a Self-Driving Car & Machine Learning Engineer",
+      "text": "How I left my full-time job, studied at Udacity, and landed a job at BMW The past year has been quite a journey for me. A year ago I left my full-time",
+      "userimage": "05.jpg",
+      "username": "Cassie Evans",
+      "date": "July 12 , 2022"
+    },
+    {
+      "id": "How-to-Become-a-Master-Designer",
+      "name": "abstract",
+      "src": "06.jpg",
+      "title": "How to Become a Master Designer",
+      "text": "Many outsiders believe that designers are unicorns, gifted or special in some way. We have an innate ability to create gorgeous interfaces, a natural talent for matching complementary colors, an unexplainable intuition…",
+      "userimage": "03.jpg",
+      "username": "Linda",
+      "date": "July 10 ,2022"
+    },
+    {
+      "id": "This-free-course-can-teach-you-music-programming-basics-in-less-than-an-hour",
+      "name": "music",
+      "src": "04.jpg",
+      "title": "This free course can teach you music programming basics in less than an hour",
+      "text": "A Berlin-based music software company, just released a free interactive music course that runs right in your browser. One thing that",
+      "userimage": "04.jpg",
+      "username": "Patricia",
+      "date": "July 09 , 2022"
     }
   ]
 }

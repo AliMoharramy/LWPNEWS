@@ -4,6 +4,7 @@ import RpostCart from "./rowpostcart";
 export default function NewPosts() {
   const posts = [
     {
+      id: "12-Mobile-UX-Design-Trends-For-2018",
       name: "technology",
       src: "04.jpg",
       title: "12 Mobile UX Design Trends For 2018",
@@ -13,6 +14,7 @@ export default function NewPosts() {
       date: "July 14 ,2022",
     },
     {
+      id: "No-boat-bottomfish:-Jetty-fishing-on-the-Washington-Coast",
       name: "sport",
       src: "01.jpg",
       title: "No boat bottomfish: Jetty fishing on the Washington Coast",
@@ -22,6 +24,7 @@ export default function NewPosts() {
       date: "July 13 ,2022",
     },
     {
+      id: "What-a-Disabled-Squirrel-Taught-Me-About-Life,-Work,-and-Love",
       name: "animal",
       src: "03.jpg",
       title: "What a Disabled Squirrel Taught Me About Life, Work, and Love",
@@ -31,6 +34,7 @@ export default function NewPosts() {
       date: "May 2 ,2022",
     },
     {
+      id: "Becoming-a-Self-Driving-Car-&-Machine-Learning-Engineer",
       name: "car",
       src: "01.jpg",
       title: "Becoming a Self-Driving Car & Machine Learning Engineer",
@@ -40,6 +44,7 @@ export default function NewPosts() {
       date: "July 12 , 2022",
     },
     {
+      id: "How-to-Become-a-Master-Designer",
       name: "abstract",
       src: "06.jpg",
       title: "How to Become a Master Designer",
@@ -49,6 +54,7 @@ export default function NewPosts() {
       date: "July 10 ,2022",
     },
     {
+      id: "This-free-course-can-teach-you-music-programming-basics-in-less-than-an-hour",
       name: "music",
       src: "04.jpg",
       title:
