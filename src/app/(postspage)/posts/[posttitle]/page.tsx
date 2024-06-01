@@ -1,10 +1,11 @@
-import { posts } from "./../../../lib/posts.json";
+import { posts } from "./../../../../lib/posts.json";
 import { params } from "@/lib/definition";
-import SideBar from "../../ui/posts/sidebar";
+import SideBar from "../../../ui/posts/sidebar";
 import Image from "next/image";
 import Comments from "@/app/ui/posts/comments";
 import AddComment from "@/app/ui/posts/addcomment";
 import PostSlide from "@/app/ui/main page/postSlide";
+import Link from "next/link";
 
 export default async function PostPage({ params }: { params: params }) {
   const data = posts.find(
@@ -12,14 +13,23 @@ export default async function PostPage({ params }: { params: params }) {
   );
   return (
     <main className="">
-      <div className="grid grid-cols-8 w-10/12 m-auto gap-5">
+      <div className="flex flex-row gap-3 text-xs w-10/12 m-auto my-8">
+        <Link href="/">Home</Link>
+        <p>{">"}</p>
+        <Link href="/posts">Posts</Link>
+        <p>{">"}</p>
+        <Link href={`/posts/${data?.id}`} className="text-Black75">
+          {data?.id}
+        </Link>
+      </div>
+      <div className="grid lg:grid-cols-8 w-10/12 m-auto gap-5">
         <div className="col-span-6">
-          <div className="relative bg-Gray rounded-xl h-138 mb-32 p-4">
+          <div className="relative lg:bg-Gray rounded-xl h-138 mb-32 p-4">
             <h4 className="text-2xl mb-4">{data?.title}</h4>
             <div className="absolute h-138 w-19/20 m-auto abscenter">
               <Image
-                src={`/${data.name}/${data.src}`}
-                alt={data.name}
+                src={`/${data?.name}/${data?.src}`}
+                alt={"image"}
                 fill
                 className="rounded-xl object-cover"
               />
