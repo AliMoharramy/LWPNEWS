@@ -135,7 +135,7 @@ export default async function PostPage({ params }: { params: params }) {
           <Comments />
           <AddComment />
         </div>
-        <SideBar data={data} />
+        {data && <SideBar data={data} />}
       </div>
       <PostSlide
         useclass={"relatedposts"}
