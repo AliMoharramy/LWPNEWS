@@ -1,13 +1,27 @@
 "use client";
 import Image from "next/image";
-import Menubar from "./menubar";
+import { useRouter } from "next/navigation";
+import { ReactNode, useState } from "react";
 
 function menuOpen() {
   alert("Checking 😊");
 }
 function menuClose() {}
 
-export default function Header() {
+export default function Header({
+  user,
+  children,
+}: {
+  user: boolean;
+  children: ReactNode;
+}) {
+  const router = useRouter();
+  const [accdrop, setAccDrop] = useState(0);
+
+  function postLink(e: React.MouseEvent) {
+    e.preventDefault();
+    router.push(`/login`);
+  }
   return (
     <div className="flex flex-row lg:justify-between my-6 gap-3 lg:gap-0 w-10/12 mx-auto">
       <nav className="flex flex-row items-center">
@@ -148,49 +162,74 @@ export default function Header() {
             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
           </svg>
         </div>
-        <div id="user" className="lg:flex flex-row mx-4 hidden">
-          <Image
-            src="/avatar/06.jpg"
-            alt=""
-            width={50}
-            height={50}
-            className="rounded-xl"
-          />
-          <button
-            id="dropdownNavbarLink"
-            data-dropdown-toggle="dropdownNavbar"
-            className="flex items-center justify-between w-full mx-1 text-gray-900 rounded  md:dark:hover:bg-transparent"
-          >
-            John Smith
-            <svg
-              className="w-2.5 h-2.5 ms-1.5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 1 4 4 4-4"
+        {user && (
+          <>
+            <div id="user" className="lg:flex flex-row mx-4 hidden relative">
+              <Image
+                src="/avatar/06.jpg"
+                alt=""
+                width={50}
+                height={50}
+                className="rounded-xl"
               />
-            </svg>
-          </button>
-        </div>
-        <div
-          id="savebtn"
-          className="bg-Gray p-3 rounded-xl ml-4 hidden lg:flex"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512"
-            className="w-3 cursor-pointer text-Black"
+              <button
+                className="flex items-center justify-between w-full mx-1 text-gray-900 rounded  md:dark:hover:bg-transparent "
+                onClick={(e) => setAccDrop(accdrop ? 0 : 1)}
+              >
+                John Smith
+                <svg
+                  className="w-2.5 h-2.5 ms-1.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`${
+                  accdrop ? "block" : "hidden"
+                } bg-White shadowbox absolute p-4 rounded-xl w-full -bottom-16 z-100 transition-all`}
+              >
+                {children}
+              </div>
+            </div>
+            <div
+              id="savebtn"
+              className="bg-Gray p-3 rounded-xl ml-4 hidden lg:flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                className="w-3 cursor-pointer text-Black"
+              >
+                <path d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+              </svg>
+            </div>
+          </>
+        )}
+        {!user && (
+          <button
+            className="p-2 rounded-xl flex flex-row ml-4 items-center font-bold text-sm"
+            onClick={(e) => postLink(e)}
           >
-            <path d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
-          </svg>
-        </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              className="w-8 p-2 bg-Gray rounded-xl mr-1"
+            >
+              <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+            Login | Register
+          </button>
+        )}
       </div>
     </div>
   );

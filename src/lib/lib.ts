@@ -2,19 +2,21 @@
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 
-const secretKey = "secret";
+const secretKey = "secr7e0d44fd473002f1c42167459001140eet";
 const key = new TextEncoder().encode(secretKey);
 
 export async function encrypt(payload: any) {
   return await new SignJWT(payload)
-    .setProtectedHeader({ alg: "HS256" })
+    .setProtectedHeader({ alg: "HS256", typ: "JWT" })
     .setIssuedAt()
-    .setExpirationTime("10 sec from now")
+    .setExpirationTime("10 hours from now")
     .sign(key);
 }
 
-export async function decrypt(input: string) {
-  const { payload } = await jwtVerify(input, key, { algorithms: ["HS256"] });
+export async function decrypt(input: string): Promise<any> {
+  const { payload } = await jwtVerify(input, key, {
+    algorithms: ["HS256"],
+  });
   return payload;
 }
 export async function login(formData: FormData) {
@@ -22,7 +24,7 @@ export async function login(formData: FormData) {
     email: formData.get("email"),
     password: formData.get("password"),
   };
-  const expires = new Date(Date.now() + 100000 * 10000);
+  const expires = new Date(Date.now() + 1000 * 36000);
   const session = await encrypt({ user, expires });
   cookies().set("session", session, { expires, httpOnly: true });
 }
