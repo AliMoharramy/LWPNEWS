@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { ReactNode, useState } from "react";
+import { users } from "@/lib/definition";
 
 function menuOpen() {
   alert("Checking 😊");
@@ -11,9 +12,11 @@ function menuClose() {}
 export default function Header({
   user,
   children,
+  data,
 }: {
   user: boolean;
   children: ReactNode;
+  data: users;
 }) {
   const router = useRouter();
   const [accdrop, setAccDrop] = useState(0);
@@ -164,9 +167,12 @@ export default function Header({
         </div>
         {user && (
           <>
-            <div id="user" className="lg:flex flex-row mx-4 hidden relative">
+            <div
+              id="user"
+              className="lg:flex flex-row mx-4 hidden relative min-w-32"
+            >
               <Image
-                src="/avatar/06.jpg"
+                src={`/avatar/${data.img}`}
                 alt=""
                 width={50}
                 height={50}
@@ -176,7 +182,7 @@ export default function Header({
                 className="flex items-center justify-between w-full mx-1 text-gray-900 rounded  md:dark:hover:bg-transparent "
                 onClick={(e) => setAccDrop(accdrop ? 0 : 1)}
               >
-                John Smith
+                {data.name}
                 <svg
                   className="w-2.5 h-2.5 ms-1.5"
                   aria-hidden="true"

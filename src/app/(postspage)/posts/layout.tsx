@@ -22,7 +22,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header user={islogin}>
+        <Header user={islogin} data={session?.user}>
           <LogOut />
         </Header>
         {children}

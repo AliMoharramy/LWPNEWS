@@ -1,6 +1,6 @@
 import { sql } from "@vercel/postgres";
 import { unstable_noStore as noStore } from "next/cache";
-import { clubtable } from "./definition";
+import { clubtable, users } from "./definition";
 
 export async function fetchClubTable() {
   noStore();
@@ -16,5 +16,17 @@ export async function fetchClubTable() {
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch the users.");
+  }
+}
+export async function fetchUsers(email: string) {
+  noStore();
+  try {
+    const user = await sql<users>`
+        SELECT * FROM lwpusers WHERE email=${email}
+        `;
+    return user.rows[0];
+  } catch (error) {
+    console.error("Failed to fetch user:", error);
+    throw new Error("Failed to fetch user.");
   }
 }

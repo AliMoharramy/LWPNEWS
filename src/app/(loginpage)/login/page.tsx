@@ -1,23 +1,14 @@
-import { redirect } from "next/navigation";
-import { login, getSession, logout } from "@/lib/lib";
-import { NextRequest, NextResponse } from "next/server";
+"use client";
 
-export default async function LoginPage() {
-  const session = await getSession();
+import { authenticate } from "@/lib/action";
+import { useFormState } from "react-dom";
 
+export default function LoginPage() {
+  const [errorMessage, dispatch] = useFormState(authenticate, undefined);
   return (
     <div>
       <form
-        action={async (formData) => {
-          "use server";
-          try {
-            await login(formData);
-          } catch (err) {
-            console.error(err);
-            return;
-          }
-          redirect("/");
-        }}
+        action={dispatch}
         className="bg-Gray flex flex-col w-1/2 m-auto h-lvh items-center justify-center [&>input]:p-2 [&>input]:m-1"
       >
         <label htmlFor="email">Email</label>
@@ -32,8 +23,8 @@ export default async function LoginPage() {
         >
           Submit
         </button>
+        {errorMessage && <p className="text-sm text-red-500">{errorMessage}</p>}
       </form>
-      <pre>{JSON.stringify(session, null, 2)}</pre>
     </div>
   );
 }

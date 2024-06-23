@@ -1,3 +1,5 @@
+import { EmailConfig } from "next-auth/providers/email";
+
 export interface post {
   id?: string;
   name: string;
@@ -21,4 +23,12 @@ export type clubtable = {
 };
 export type params = {
   posttitle: string;
+};
+export type users = {
+  id: string;
+  product_id: string;
+  email: string;
+  password: string;
+  name: string;
+  img: string;
 };
